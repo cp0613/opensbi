@@ -23,6 +23,11 @@ config PLATFORM_GENERIC_MINOR_VER
 	range 0 65535
 	default 1
 
+config PLATFORM_THEAD_C9XX
+	bool "THEAD C9XX support"
+	depends on FDT_IRQCHIP_PLIC
+	default n
+
 config PLATFORM_ALLWINNER_D1
 	bool "Allwinner D1 support"
 	depends on FDT_IRQCHIP_PLIC
